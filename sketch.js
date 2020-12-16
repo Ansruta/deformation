@@ -9,7 +9,7 @@ function setup() {
   car=createSprite(50, 200, 50, 50);
   car.velocityX=speed;
   wall=createSprite(1500, 200, 60, height/2);
-  deform=0.5*weight*speed*speed/22500; 
+  deform=0.5*weight*car.velocityX*car.velocityX/22500; 
   speed=random(55,90);
   weight=random(400,1500);
 }
